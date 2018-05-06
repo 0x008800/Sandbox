@@ -1,0 +1,5 @@
+Hit Ctrl+G to bring up the Help documentation and scroll down to see a list of valid shortcuts
+
+When you’re done looking at the list, hit Ctrl+X to exit help.
+
+

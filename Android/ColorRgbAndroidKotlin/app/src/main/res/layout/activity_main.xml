@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.oxoo88oo.colorrgbbymisha.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/button_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/red"
+        android:max="255"
+        android:progress="96"
+        android:thumb="@color/blueLight"
+        android:visibility="visible" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/green"
+        android:max="255"
+        android:progress="96"
+        android:thumb="@color/redLight" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:background="@color/blue"
+        android:max="255"
+        android:progress="96"
+        android:thumb="@color/yellowLight" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:id="@+id/inner_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/textView"
+            android:textSize="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CellSymbol"
+            android:layout_weight="3" />
+
+        <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+            android:layout_weight="7" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"/>
+
+        <Button
+            android:id="@+id/setColor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/set_color"
+            android:layout_weight="2"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button_copy_to_buffer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/copy_to_buffer"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+</LinearLayout>

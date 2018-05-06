@@ -1,0 +1,5 @@
+file = open('file.txt', 'r+')
+#print(file.read())
+data = input('enter your data: ')
+file.write(data)
+file.close()

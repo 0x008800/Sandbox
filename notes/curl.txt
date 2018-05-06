@@ -1,0 +1,8 @@
+GET:
+curl http://site.com/users
+
+POST:
+curl -X POST http://site.com/users
+
++
+

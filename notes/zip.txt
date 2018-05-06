@@ -1,0 +1,2 @@
+zip -r folder file.c
+unzip file.zip -d destination_folder

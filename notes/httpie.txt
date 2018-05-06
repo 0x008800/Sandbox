@@ -1,0 +1,18 @@
+pip install httpie
+
+GET:
+http http://127.0.0.1:8000/snippets
+http http://127.0.0.1:8000/snippets/1/
+
+http http://127.0.0.1:8000/snippets/ Accept:application/json  # Request JSON
+http http://127.0.0.1:8000/snippets/ Accept:text/html         # Request HTML
+
+http http://127.0.0.1:8000/snippets.json  # JSON suffix
+http http://127.0.0.1:8000/snippets.api   # Browsable API suffix
+
+POST:
+http --form POST http://127.0.0.1:8000/snippets/ code="print 123"  # POST using form data
+
+http --json POST http://127.0.0.1:8000/snippets/ code="print 456" # POST using JSON
+
+If you add a --debug switch to the http requests above, you will be able to see the request type in request headers.
